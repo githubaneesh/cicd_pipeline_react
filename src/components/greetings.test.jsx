@@ -5,7 +5,7 @@ import Greetings from './greetings';
 
 test('renders the correct greeting message', () => {
   render(<Greetings name="Alice" />);
-  const greetingElement = screen.getByText(/Hello  .*Alice.*welcome/);
+  const greetingElement = screen.getByText(/Hello.*Alice.*welcome/);
   expect(greetingElement).toBeInTheDocument();
 });
 
