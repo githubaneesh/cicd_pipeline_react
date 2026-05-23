@@ -2,7 +2,6 @@ import {test,expect} from 'vitest';
 import React from 'react';
 import {render,screen} from '@testing-library/react';
 import Greetings from './greetings';
-import '@testing-library/jest-dom';
 
 test('renders the correct greeting message', () => {
   render(<Greetings name="Alice" />);
